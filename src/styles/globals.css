@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: "Acorn";
+    src: url("../Fonts/Acorn-SemiBold.ttf");
+}
+
+/* Styles */
+.textShadow {
+    /* text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+                 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000; */
+    -webkit-text-stroke: 1px #000000;
+}
+.textShadow:hover{
+    -webkit-text-stroke: 0px;
+    color: black;
+    /* transition: 0.5s; */
+}
+
+/* Underline animation */
+.underline-anim{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1px; */
+    width: max-content;
+}
+.underline-anim::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: black;
+}
+.underline-anim:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* Strip behind text yellow */
+.showStrip-anim-yellow{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    position: relative;
+}
+.showStrip-anim-yellow::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background: #FFEEB2;
+    position: absolute;
+    bottom: 1px;
+    z-index: -1;
+}
+.showStrip-anim-yellow:hover::after{
+    width: 100%;
+    height: 35%;
+    /* transition: 0.5s; */
+}
+
+/* Strip behind text pink */
+.showStrip-anim-pink{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    position: relative;
+}
+.showStrip-anim-pink::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background: #F2C3C0;
+    position: absolute;
+    bottom: 1px;
+    z-index: -1;
+}
+.showStrip-anim-pink:hover::after{
+    width: 100%;
+    height: 35%;
+    /* transition: 0.5s; */
+}
+
+/* Ellipse */
+.ellipse-top{
+    clip-path: ellipse(50% 30%);
+}
+.ellipse-bottom{
+    clip-path: ellipse(50% 50%);
+}
+
+/* Blink Once Animation */
+@keyframes blink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-blink{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
