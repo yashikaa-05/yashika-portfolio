@@ -8,8 +8,8 @@ export default function Navbar() {
                 <Link className='' href={"/"}>Home</Link>
                 <div className='flex gap-20'>
                     <Link className='underline-anim' href={"/about"}>About</Link>
-                    <Link className='' href={"/experiments"}>Experiments</Link>
-                    <Link className='' href={"/"}>Contact</Link>
+                    <Link className='underline-anim' href={"/experiments"}>Experiments</Link>
+                    <Link className='underline-anim' href={"/"}>Contact</Link>
                 </div>
             </div>
         </div>
