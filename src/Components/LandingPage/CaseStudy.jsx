@@ -28,7 +28,7 @@ export default function Contact() {
                     <div className='flex flex-col gap-3'>
                         <h1 className='text-3xl font-bold'>Drunken Roads</h1>
                         <h6 className='font-poppins text-sm'>This web and app was designed for a client. The main aim was to aware users about the trip itinerary, price and duration; and users can contact them to ask any query.</h6>
-                        <a href="" target='_blank'>
+                        <a href="https://www.figma.com/proto/2DWPHzbYILhfrKs5p8vLn4/Yashika-Portfolio?page-id=340%3A1617&type=design&node-id=340-1746&viewport=-178%2C453%2C0.61&t=8Ce7m7S3uUaX2qek-1&scaling=min-zoom&mode=design" target='_blank'>
                             <button className='underline-anim tracking-[0.5px]' src='www.google.com'>View more</button>
                         </a>
                     </div>
